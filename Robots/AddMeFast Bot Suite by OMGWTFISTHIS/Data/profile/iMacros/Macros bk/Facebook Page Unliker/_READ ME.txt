@@ -1,0 +1,14 @@
+Hey guys, this tool will allow you to unlike thousands of Facebook accounts once you get locked at 5,000 pages liked.
+
+Please refer to my thread for more information:
+
+http://www.blackhatworld.com/blackhat-seo/social-networking-sites/572692-get-unlike-facebook-pages-fast-new-updated.html
+
+*Note**
+
+If you are using the "Pages Liked" script, please open it with Notepad or a similar program and edit line 7 & 8 to your own username, they should be these two:
+
+URL GOTO=http://www.facebook.com/YourFacebookPageUsername
+URL GOTO=www.facebook.com/YourFacebookPageUsername/likes
+
+Just fill them in!

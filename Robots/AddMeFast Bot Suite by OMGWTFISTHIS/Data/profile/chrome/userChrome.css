@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#im-share-button, 
+#im-record-tab, 
+#im-pause-button, 
+#im-playloop-button,
+#appmenu-button,
+#im-refresh-button,
+#im-help-button,
+#Alertfox,
+#im-curloop-textbox,
+#im-loopval-textbox,
+#repeat,
+#im-local-test-button,
+#im-test-for-idrone,
+#im-online-test-button,
+#im-af-upload-button
+{ display: none !important; }

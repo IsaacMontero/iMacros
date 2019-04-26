@@ -1,0 +1,21 @@
+﻿SET !ERRORIGNORE YES
+URL GOTO=http://addmefast.com/free_points/youtube_subscribe
+TAG POS=1 TYPE=DIV ATTR=TXT:Subscribe
+TAB T=2
+Wait SECONDS=3
+TAG POS=1 TYPE=BUTTON ATTR=TXT:SubscribeSubscribedUnsubscribe
+Wait SECONDS=2
+TAB T=1
+TAB CLOSEALLOTHERS
+Wait SECONDS=2
+TAB T=1
+TAG POS=1 TYPE=DIV ATTR=TXT:Subscribe
+TAB T=2
+Wait SECONDS=3
+TAG POS=1 TYPE=BUTTON ATTR=TXT:SubscribeSubscribedUnsubscribe
+Wait SECONDS=2
+TAB T=1
+TAB CLOSEALLOTHERS
+TAB T=1
+WAIT SECONDS=5
+

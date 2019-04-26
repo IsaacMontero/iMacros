@@ -1,0 +1,7 @@
+AddMeFastEmail:AddMeFastPassword
+
+Please type in your AddMeFast E-mail login/password to enable the auto-login feature of AMF Bot Suite.
+
+You should enter it in the first line as Email:Password, with : being the seperator between the two.
+
+Enjoy!

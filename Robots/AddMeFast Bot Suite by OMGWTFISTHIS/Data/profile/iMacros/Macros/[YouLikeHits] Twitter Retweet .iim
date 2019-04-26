@@ -1,0 +1,40 @@
+﻿VERSION BUILD=1001 RECORDER=CR
+SET !LOOP -9999999
+SET !EXTRACT_TEST_POPUP NO
+SET !ERRORIGNORE YES
+
+TAB T=1
+URL GOTO= https://www.youlikehits.com/retweets.php
+WAIT SECONDS = 2
+TAG POS=1 TYPE=IFRAME ATTR=* EXTRACT=HREF  
+  'Pass URL to variable
+SET iFrameURL {{!EXTRACT}} 
+
+  'replace url
+  'SET !VAR1 EVAL("\"{{!EXTRACT}}\".replace(\"retweetrender\",\"retweeted\");")
+  'Open new Tab/window
+TAB OPEN
+  'Switch to the new Tab/window 
+TAB T=2 
+  'Navigate to URL from varable (iframe url)
+URL GOTO={{iFrameURL}}
+WAIT SECONDS = 1
+TAG POS=1 TYPE=A ATTR=TXT:*
+  'Twitter tab
+TAB T=3
+WAIT SECONDS = 2
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ACTION:https://twitter.com/intent/retweet* ATTR=NAME:commit&&VALUE:Retweet
+WAIT SECONDS = 2
+   'Close twitter
+TAB CLOSE
+   'Iframe again lets confirm...
+TAB T=2
+SET !EXTRACT NULL
+TAG POS=2 TYPE=A ATTR=* EXTRACT=HTM
+SET !VAR1 EVAL("'{{!EXTRACT}}'.replace('<a href=\"javascript:void(0);\" onclick=\"parent.','');")
+SET !VAR2 EVAL("'{{!VAR1}}'.replace(';\" style=\"text-decoration: none; outline: 1px solid blue;\"><div style=\"margin:2px;border-radius:7px;padding:4px;background:green;color:#fff;font-family:verdana;font-size:12px;\">Confirm</div></a>','');")
+    'PROMPT {{!VAR2}}
+TAB T=1
+TAB CLOSEALLOTHERS
+URL GOTO=javascript:{{!VAR2}}
+WAIT SECONDS = 5

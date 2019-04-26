@@ -1,0 +1,161 @@
+﻿SET !DATASOURCE_DELIMITER :
+SET !DATASOURCE Setup.txt
+SET !DATASOURCE_COLUMNS 2
+SET !VAR1 {{!COL1}}
+SET !VAR2 {{!COL2}}
+
+
+SET !REPLAYSPEED FAST
+
+
+'For the replay speed, you have three options to use. FAST|MEDIUM|SLOW
+'^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+
+
+'Created by OMGWTFISTHIS. You can find me at the links below:
+'HackForums: http://www.hackforums.net/member.php?action=profile&uid=585389
+'CPAElites: http://www.cpaelites.com/User-OMGWTFISTHIS
+'BlackHatWorld: http://www.blackhatworld.com/blackhat-seo/members/223804-omgwtfisthis.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SET !ERRORIGNORE YES
+SET !LOOP -9999999
+SET !TIMEOUT_TAG 1
+SET !TIMEOUT_STEP 1
+SET !VAR3 EVAL("var randomNumber=Math.floor(Math.random()*10.3 + 4.3); randomNumber;")
+SET !VAR4 EVAL("var randomNumber=Math.floor(Math.random()*6.3 + 2.4); randomNumber;")
+SET !VAR5 EVAL("var randomNumber=Math.floor(Math.random()*4.1 + 1.2); randomNumber;")
+SET !VAR6 EVAL("var randomNumber=Math.floor(Math.random()*10 + 5); randomNumber;")
+SET !VAR7 EVAL("var randomNumber=Math.floor(Math.random()*93.2 + 50.3); randomNumber;")
+TAB T=1
+URL GOTO=http://addmefast.com/bonus_points.html
+TAG POS=1 TYPE=INPUT:BUTTON ATTR=NAME:subscribe
+TAG POS=1 TYPE=INPUT:EMAIL FORM=NAME:NoFormName ATTR=NAME:email CONTENT={{!VAR1}}
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=NAME:NoFormName ATTR=NAME:password CONTENT={{!VAR2}}
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=NAME:NoFormName ATTR=NAME:remember CONTENT=YES
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=NAME:NoFormName ATTR=NAME:login_button
+URL GOTO=http://addmefast.com/free_points/facebook_likes.html
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR5}}
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR5}}
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR5}}
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR5}}
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR5}}
+SET !TIMEOUT_STEP 5
+TAG POS=1 TYPE=A ATTR=TXT:Like
+TAB T=2
+FRAME F=0
+SET !TIMEOUT_STEP 2
+WAIT SECONDS={{!VAR4}}
+TAG POS=1 TYPE=INPUT:SUBMIT ATTR=VALUE:Like
+TAB T=2
+WAIT SECONDS={{!VAR4}}
+TAB T=1
+WAIT SECONDS={{!VAR5}}
+TAB CLOSEALLOTHERS
+WAIT SECONDS={{!VAR3}}
+
+
+
+'Created by OMGWTFISTHIS. You can find me at the links below:
+'HackForums: http://www.hackforums.net/member.php?action=profile&uid=585389
+'CPAElites: http://www.cpaelites.com/User-OMGWTFISTHIS
+'BlackHatWorld: http://www.blackhatworld.com/blackhat-seo/members/223804-omgwtfisthis.html
